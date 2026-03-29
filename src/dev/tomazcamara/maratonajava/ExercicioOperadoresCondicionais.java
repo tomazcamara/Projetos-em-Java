@@ -2,19 +2,18 @@ package dev.tomazcamara.maratonajava;
 
 public class ExercicioOperadoresCondicionais {
     public static void main (String[] args){
-        double salary = 40.35;
-        if (salary <= 34.71){
-            double taxadeSalario = (salary * 9.70)/100;
-            System.out.println("Pagará a taxa de: "+ taxadeSalario);
-        } else if(salary > 34.71 && salary <= 68.50){
-            double taxadeSalario2= (salary*37.35)/100;
-            System.out.println("Pagará o valor de: " + taxadeSalario2);
-
+        double salarioanual = 70000 ;
+        double porcentagem1 = 9.70 / 100;
+        double porcentagem2 = 35.75 / 100;
+        double porcentagem3 = 49.50 / 100;
+        double valorImposto;
+        if (salarioanual <= 34712){
+            valorImposto = (salarioanual * porcentagem1);
+        } else if(salarioanual > 3471 && salarioanual <= 68507){
+            valorImposto = (salarioanual * porcentagem2);
         } else{
-            double taxadeSalario3 = (salary * 49.50)/100;
-            System.out.println("Pagará taxa de: "+ taxadeSalario3);
+            valorImposto = (salarioanual * porcentagem3);
         }
-
-
+        System.out.println("Pagará taxa de: " + valorImposto);
     }
 }
